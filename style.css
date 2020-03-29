@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(Fonts/Futura.ttc);
+  font-family: 'Futura Bold';
+  src: url(Fonts/Futura Bold.ttf);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', sans-serif;
+}
+
+a, a:hover, a:focus {
+  color: white;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+
+
+#burger_menu {
+  height: 15px;
+  width: 15px;
+}
+.navbar-brand span {
+  font-size: 3vh;
+  font-weight: 700;
+  padding-left: 5vw;
+}
+
+.navbar-custom {
+  text-transform: capitalize;
+  background: white;
+
+}
+.navbar-custom .nav > li > a:hover,
+.navbar-custom .nav > li > a:focus {
+  background: none;
+}
+.navbar-custom .nav li.active a:before,
+.navbar-custom .nav > li > a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 20px;
+}
+
+.nav li a {
+  padding-right: 5vw;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  height: 6vh;
+
+
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    background: 0 0;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom .nav > li > a:hover::before,
+  .navbar-custom .nav > li > a:focus::before {
+    border-bottom-color: white;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-custom {
+    color: #ffe400;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-custom .nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-custom .nav > li > a,
+  .navbar-custom .navbar-toggle {
+    color: #fafafa;
+  }
+  .navbar-custom .nav li.active a {
+    color: #ffe400;
+  }
+  .navbar-custom .nav > li > a:hover::before {
+    border-bottom-color: #ffe400;
+  }
+  #logo {
+    background-image: url(Images/LogoBlack.svg);
+    top: 24%;
+    width: 20vw;
+    background-repeat: no-repeat;
+    left: 5vw;
+    transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-custom.top-nav-collapse {
+    padding: 0;
+    background: white;
+  }
+}
+
+.navbar-custom a {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom.top-nav-collapse {
+    padding: 10px 0;
+    background: white;
+  }
+  .navbar-custom.top-nav-collapse .navbar-brand {
+    color: #ffe400;
+  }
+  .navbar-custom.top-nav-collapse .nav > li > a {
+    color: #fafafa;
+  }
+  .navbar-custom.top-nav-collapse .nav li.active a {
+    color: #ffe400;
+  }
+  .navbar-custom.top-nav-collapse .nav > li > a:hover::before {
+    border-bottom-color: #ffe400;
+  }
+}
+
+.navbar-toggle {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin: 0;
+  padding: 15px;
+  border: none;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('Images/BackgroundVinyl.jpg');
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.rotating-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  
+}
+
+.rotating-cards__el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 104%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+
+  
+}
+.rotating-cards__el div {
+  width: calc(100% + 60px);
+  height: calc(100% + 60px);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#img_1 {
+  background-image: url('Images/FJM.jpg');
+  margin-left: 30vw;
+  background-position: 50% 40%;
+}
+#img_2 {
+  background-image: url('Images/Tyler.jpg');
+  margin-left: 8vw;
+  background-position: 50% 50%;  
+}
+#img_3 {
+  background-image: url('Images/Julia.jpg');
+  margin-left: 30vw;
+  background-position: 50% 0%;
+}
+
+.info_box {
+  position: absolute;
+  top: 35vh;
+  left: 10vw;
+  height: 25vw;
+  width: 25vw;
+  background-size: cover;
+
+}
+.info_julia {
+  background-image: url('Images/InfoBoxJulia.svg');
+}
+.info_tyler {
+  background-image: url('Images/InfoBoxTyler.svg');
+}
+.info_fjm {
+  background-image: url('Images/InfoBoxFJM.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.background_vinyl {
+  position: absolute;
+  background-image: url('Images/BackgroundVinyl.jpg');
+  background-size: cover;
+  width: 104%;
+  height: 100vh;
+  top: 0vh;
+  left: -40vw;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
