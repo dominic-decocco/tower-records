@@ -213,7 +213,7 @@ a:hover, a:focus {
   width: 104%;
   height: 100%;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 
 
   
@@ -270,7 +270,7 @@ a:hover, a:focus {
   height: 100vh;
   top: 0vh;
   left: -40vw;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 
 
@@ -285,7 +285,7 @@ a:hover, a:focus {
     width: 100vw;
     height: 140vh;
     overflow: hidden;
-    clip-path: polygon(0 0%, 100% 0, 100% 50%, 0 75%);
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 50%, 0 75%);
   }
   .background_vinyl {
     background-image: url('Images/BackgroundVinylSmall.jpg');
@@ -296,7 +296,7 @@ a:hover, a:focus {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0%, 100% 0, 100% 50%, 0 75%);
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 50%, 0 75%);
   }
   .container {
     margin: 0;
@@ -326,14 +326,6 @@ a:hover, a:focus {
   }
 }
 
-@media (max-width: 670px)
-and (orientation: landscape) {
-  
-  #logo {
-    top: 7vh;
-  }
-
-}
 
 
 
