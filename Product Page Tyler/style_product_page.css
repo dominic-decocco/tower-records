@@ -123,7 +123,6 @@ body {
 
 
 #container {
-	height: 200vh;
 	width: 100vw;
 	background-image: url('../Images/BackgroundTyler.jpg');
 	background-size: contain;
@@ -164,7 +163,7 @@ body {
 #info_wrapper {
 	height: 70%;
 	width: 100%;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 #title {
 	height: 40%;
@@ -190,7 +189,7 @@ body {
 .middle{
   position: absolute;
   top: 57.5%;
-  left: 69%;
+  left: 66%;
   transform: translate(-50%,-50%);
 }
 
@@ -230,7 +229,7 @@ body {
 
 #details {
 	display: flex;
-	height: 30vh;
+	height: 45vh;
 	width: 100%;
 	background: white;
 	padding-top: 10vh;
@@ -244,7 +243,6 @@ body {
 	width: 50%;
 }
 #description {
-	height: 60%;
 	width: 80%;
 	margin-left: 5%;
 	padding-right: 10%;
@@ -256,29 +254,28 @@ body {
 
 #line {
 	width: 10%;
-	height: 10%;
+	height: 4vh;
 	border-bottom: 5px solid #F8BD2F; 
 	margin-left: 5%;
 }
 
 #suggestions {
-	height: 80vh;
+	height: 50vh;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background: white;
 	overflow: auto;
-	padding-top: 10vh;
 }
 
 #suggestions_title {
-	height: 35%;
+	height: 5vh;
 	width: 100%;
-	padding-left: 5vw;
+	padding-left: 10vw;
 	font-family: Oswald;
-	color: white;
 	line-height: 100%;
+	background: white;
 }
 
 .sugg {
@@ -523,7 +520,7 @@ and (orientation: portrait) {
 	}
 
 	#content {
-		height: 40vh;
+		height: 100vh;
 		flex-direction: column;
 		margin-top: 20vh;
 	}
@@ -585,24 +582,19 @@ and (orientation: portrait) {
 		margin-top: 20vw;
 	}
 	#description {
-		margin-top: 20px;
 		font-size: 3.5vw;
 		color: black;
-		height: 14vw;
 	}
 	#description h5 {
-		font-family: FuturaBold;
+		font-family: Oswald;
+		font-style: italic;
 
 	}
 
 	#line {
 		display: none;
 	}
-	#suggestions {
-		margin-top: 30vw;
-		padding: 0;
-		height: 60vh;
-	}
+	
 	#suggestions_title {
 		padding-left: 10%;
 	}
@@ -712,11 +704,13 @@ and (orientation: portrait) {
 /* DONT TOUCH */
 @media (max-height: 700px)
 and (orientation: portrait) {
-	#details_right {
-		margin-top: 40vw;
+	#content {
+		height: 120vw;
 	}
-	#suggestions {
-		margin-top: 50vw;
+	#details {
+		height: 40vh;
+		padding-top: 0;
+	}
 }
 
 
