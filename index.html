@@ -4,39 +4,30 @@
   <meta charset="UTF-8">
   <title>Tower Records</title>
     <meta name="viewport" content="width=device-width">
-    <link href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/503833/style.css' rel='stylesheet' type='text/css'>
-    <link href='https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js' type='text/javascript'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
     <link rel="stylesheet" href="style.css">
   
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
   
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          <span><img src="Images/BurgerMenu.svg" alt="" id="burger_menu"></span>
-        </button>
-        <a href="#page-top" class="navbar-brand page-scroll" target="_blank">
-          <span>shop</span>
-        </a>
-        
-      </div>
-      <div class="navbar-collapse navbar-right navbar-main-collapse collapse" aria-expanded="false">
-          <ul class="nav navbar-nav">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href="#quase_page">login</a></li>
-            <li><a href="#contact">cart</a></li>
-          </ul>
-      </div>
-      <a href="#home">
-        <div id="logo"></div>
-      </a>
+  <nav id="navbar">
+    <div class="top_navbar">
+      <div id="burger_menu"><img src="Images/BurgerMenu.svg" alt=""></div>
+      <div class="logo"></div>
+      <div class="search"><img src="Images/SearchIcon.svg" alt=""></div>
+    </div>
+    <div id="hidden_navbar">
+      <ul class="list">
+        <li><a href="#home" class="breakdown_button white_text">vinyl</a></li>
+        <li><a href="" class="breakdown_button white_text">cd</a></li>
+        <li><a href="" class="breakdown_button white_text">blu-ray</a></li>
+        <li><a href="" class="breakdown_button white_text">audio</a></li>
+        <li><a href="" class="breakdown_button white_text">acessories</a></li>
+        <li><a href="" class="breakdown_button white_text">login</a></li>
+        <li><a href="" class="breakdown_button white_text">cart</a></li>
+
+
+      </ul>
     </div>
   </nav>
 
@@ -47,32 +38,38 @@
     <div class="wrapper">
       <div class="rotating-cards">
         
-        <div class="rotating-cards__el">
-          <div id="img_1"></div>
-          <span class="background_vinyl"></span>
-          <span class="info_box info_fjm"></span>
-        </div>
+        <a href="Product Page FJM/index_product_page.html">
+          <div class="rotating-cards__el">
+            <div id="img_1"></div>
+            <span class="background_vinyl"></span>
+            <span class="info_box info_fjm"></span>
+          </div>
+        </a>
+        
 
-        <div class="rotating-cards__el">
-          <div id="img_2"></div>
-          <span class="background_vinyl"></span>
-          <span class="info_box info_tyler"></span>
-        </div>
-
-        <div class="rotating-cards__el">
-          <div id="img_3"></div>
-          <span class="background_vinyl"></span>
-          <span class="info_box info_julia"></span>
-        </div>
+        <a href="Product Page Tyler/index_product_page.html">
+          <div class="rotating-cards__el">
+            <div id="img_2"></div>
+            <span class="background_vinyl"></span>
+            <span class="info_box info_tyler"></span>
+          </div>
+        </a>
+        
+        <a href="Product Page Julia/index_product_page.html">
+          <div class="rotating-cards__el">
+            <div id="img_3"></div>
+            <span class="background_vinyl"></span>
+            <span class="info_box info_julia"></span>
+          </div>
+        </a>
+        
 
       </div>
     </div>
   </div>
 <!-- partial -->
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+  
 
   <script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
   <script src="jquery-3.4.1.min.js"></script>

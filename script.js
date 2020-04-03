@@ -1,12 +1,26 @@
 // JQUERY TO COLLAPSE NAVBAR
 
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-      
+    if ($(".top_navbar").offset().top > 200) {
+        $(".top_navbar").addClass("white");
+        $(".logo").addClass("invert");
+        $("#burger_menu").addClass('invert');
+        $(".search").addClass('invert');
+        $("#hidden_navbar").addClass('white')
+        $ (".list li a").addClass('white')
+        $ (".list li a").removeClass('white_text')
+
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-      
+        $(".top_navbar").removeClass("white");
+        $(".logo").removeClass("invert");
+        $("#burger_menu").removeClass('invert');
+        $(".search").removeClass('invert');
+        $("#hidden_navbar").removeClass('white')
+        $ (".list li a").removeClass('white')
+        $ (".list li a").addClass('white_text')
+
+
+
     }
 }
 
@@ -18,35 +32,9 @@ $(document).ready(collapseNavbar);
 
 
 
-// JQUERY FOR PAGE SCROLLING
-
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-    $('.navbar-toggle:visible').click();
-  }
-});
 
 
-
-
-
-
-
-
-
-
-// SLIDER
+// IMAGE SLIDER
 console.clear();
 const elements = document.querySelectorAll(".rotating-cards__el");
 const inners = document.querySelectorAll(".rotating-cards__el div");
@@ -137,3 +125,31 @@ elements.forEach((el, index) => {
     keyframes: innerSH,
   }, 0);
 });
+
+
+
+
+// SHOW/HIDE NAVBAR
+var burger = document.getElementById('burger_menu')
+var hiddenNavbar = document.getElementById('hidden_navbar')
+var navbar = document.getElementById('navbar')
+
+burger.addEventListener('click', function() {
+    hiddenNavbar.classList.toggle('expand');
+    navbar.classList.toggle('down')
+  });
+
+
+
+//MAKE MENU ITEMS CLOSE NAVBAR
+const breakdownButton = document.querySelectorAll('.breakdown_button');
+breakdownButton.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    hiddenNavbar.classList.toggle('expand');
+  });
+});
+
+
+
+
+
