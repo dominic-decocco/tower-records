@@ -710,7 +710,7 @@ and (orientation: portrait) {
 		height: 120vw;
 	}
 	#details {
-		height: 40vh;
+		height: 50vh;
 		padding-top: 0;
 	}
 }
